@@ -1,0 +1,3 @@
+	{
+		ruleset: ['Ubers', 'Inverse Mod'],
+	},
