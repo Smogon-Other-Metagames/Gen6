@@ -31,7 +31,7 @@
 			template = Object.assign({}, template);
 			template.baseStats = Object.assign({}, template.baseStats);
 			for (let statName in template.baseStats) {
-				template.baseStats[statName] += boost;
+				template.baseStats[statName] = this.clampIntRange(template.baseStats[statName] + boost, 1, 255);
 			}
 			return template;
 		},
